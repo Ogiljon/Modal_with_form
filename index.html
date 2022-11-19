@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal with form</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="content">
+            <button class="call__btn">See Modal with Form</button>
+
+            <p class="content__text">Email: <span class="email__text"></span></p>
+            <p class="content__text">Password: <span class="password__text"></span></p>
+            <p class="content__text">Coniform password: <span class="coniformpassword__text"></span></p>
+        </div>
+
+        <div class="modal call__modal">
+            <div class="modal__panel">
+                <div class="modal__header">
+                    <div class="modal__header-title">
+                        <h1>Create Account</h1>
+                    </div>
+                    <button class="modal__header-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                    </button>
+                </div>
+
+                    <form class="modal__form">
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" class="form__input" id="email" placeholder="Email">
+                        </div>
+                        <div class="form__group">
+                            <label for="password" class="form__label">Password</label>
+                            <input type="password" class="form__input" id="password" placeholder="Password">
+                        </div>
+                        <div class="form__group">
+                            <label for="coniformpassword" class="form__label">Coniform password</label>
+                            <input type="password" class="form__input" id="coniformpassword" placeholder="Coniform password">
+                        </div>
+                    </form>
+                    <div class="form__group">
+                        <button class="form__btn submit__btn">Submit</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
